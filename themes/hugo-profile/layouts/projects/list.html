@@ -1,0 +1,70 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    <h3 class="text-center mb-4">{{ .Site.Params.projects.title }}</h3>
+
+    <!-- Toggle buttons -->
+    <div class="d-flex justify-content-center mb-4 gap-3">
+      <button class="btn btn-outline-light active" id="btn-current" onclick="showCurrent()">Current Projects</button>
+      <button class="btn btn-outline-light" id="btn-past" onclick="showPast()">Past Projects</button>
+    </div>
+
+    <!-- CURRENT PROJECTS -->
+    <div id="current-projects" class="row g-4">
+
+      {{ $current := where .Site.Params.projects.items "type" "current" }}
+
+      {{ range $i, $p := $current }}
+      <div class="col-md-4 project-card {{ if ge $i 3 }}d-none extra-current{{ end }}">
+        {{ partial "cards/project.html" $p }}
+      </div>
+      {{ end }}
+
+      {{ if gt (len $current) 3 }}
+      <div class="col-12 text-center mt-4">
+        <button class="btn btn-outline-light" id="view-more-btn" onclick="showMoreCurrent()">
+          View More
+        </button>
+      </div>
+      {{ end }}
+
+    </div>
+
+    <!-- PAST PROJECTS -->
+    <div id="past-projects" class="row g-4 d-none">
+      {{ range where .Site.Params.projects.items "type" "past" }}
+      <div class="col-md-4 project-card">
+        {{ partial "cards/project.html" . }}
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<script>
+function showCurrent() {
+  document.getElementById("current-projects").classList.remove("d-none");
+  document.getElementById("past-projects").classList.add("d-none");
+
+  document.getElementById("btn-current").classList.add("active");
+  document.getElementById("btn-past").classList.remove("active");
+}
+
+function showPast() {
+  document.getElementById("current-projects").classList.add("d-none");
+  document.getElementById("past-projects").classList.remove("d-none");
+
+  document.getElementById("btn-current").classList.remove("active");
+  document.getElementById("btn-past").classList.add("active");
+}
+
+function showMoreCurrent() {
+  document.querySelectorAll(".extra-current").forEach(el => {
+    el.classList.remove("d-none");
+  });
+  document.getElementById("view-more-btn").style.display = "none";
+}
+</script>
+{{ end }}

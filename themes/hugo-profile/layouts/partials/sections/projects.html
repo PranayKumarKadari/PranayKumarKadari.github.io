@@ -1,0 +1,137 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <h3 class="text-center mb-5">
+      {{ .Site.Params.projects.title | default "Projects" }}
+    </h3>
+
+    <div class="row justify-content-center px-3 px-md-5">
+
+      {{ range .Site.Params.projects.items }}
+      <div class="col-lg-4 col-md-6 my-3">
+
+        <!-- PROJECT CARD -->
+        <div class="card my-3 h-100">
+
+          {{ if .image }}
+          <div class="card-head">
+            <img class="card-img-top"
+                 src="{{ .image }}"
+                 alt="{{ .title }}">
+          </div>
+          {{ end }}
+
+          <div class="card-body bg-transparent p-3">
+
+            <!-- BADGES -->
+            {{ if .badges }}
+            <div class="pb-2 bg-transparent">
+              {{ range .badges }}
+              <span class="badge badge-secondary me-1">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+
+            <!-- TITLE -->
+            <h5 class="card-title bg-transparent mt-2">
+              {{ .title }}
+            </h5>
+
+            <!-- SHORT CONTENT -->
+            <div class="card-text bg-transparent secondary-font">
+              {{ .content }}
+            </div>
+
+            <!-- MORE INFO BUTTON -->
+            {{ if .description }}
+            <div class="mt-3">
+              <button class="btn btn-sm btn-outline-light"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal{{ urlize .title }}">
+                More Info
+              </button>
+            </div>
+            {{ end }}
+
+          </div>
+
+          <!-- FOOTER LINKS -->
+          {{ if or (.links) (.featured) }}
+          <div class="card-footer py-3">
+
+            {{ range .links }}
+            <span class="mx-2">
+              <a href="{{ .url }}" target="_blank">
+                <i class="{{ .icon }}"></i>
+              </a>
+            </span>
+            {{ end }}
+
+            {{ if .featured }}
+            <span class="float-end">
+              <a class="btn btn-sm"
+                 href="{{ .featured.link }}"
+                 target="_blank">
+                {{ .featured.name }}
+              </a>
+            </span>
+            {{ end }}
+
+          </div>
+          {{ end }}
+
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      {{ if .description }}
+      <div class="modal fade"
+           id="projectModal{{ urlize .title }}"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content bg-dark text-light rounded-4">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header border-0">
+              <h5 class="modal-title">
+                {{ .title }}
+              </h5>
+              <button type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+              <div class="row g-4">
+
+                {{ if .image }}
+                <div class="col-md-5">
+                  <img src="{{ .image }}"
+                       class="img-fluid rounded"
+                       alt="{{ .title }}">
+                </div>
+                {{ end }}
+
+                <div class="col-md-7 secondary-font">
+                  {{ .description | markdownify }}
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}

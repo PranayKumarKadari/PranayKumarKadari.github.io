@@ -1,0 +1,63 @@
+{{ if .Site.Params.contact.enable | default false }}
+<section id="contact" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    <!-- CENTERED HEADING -->
+    <h3 class="text-center mb-5">Contact</h3>
+
+    <div class="row justify-content-center">
+      <!-- CONSTRAINED WIDTH -->
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        <div class="card p-4 p-md-5"
+             style="
+               border-radius: 28px;
+               border: 1px solid rgba(255,255,255,0.55);
+               background-color: rgba(255,255,255,0.06);
+             ">
+
+          <form action="https://formspree.io/f/xvzgbjzn" method="POST">
+
+            <!-- NAME -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Name</label>
+              <input type="text"
+                     name="name"
+                     class="form-control"
+                     required>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Email</label>
+              <input type="email"
+                     name="email"
+                     class="form-control"
+                     required>
+            </div>
+
+            <!-- MESSAGE -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Message</label>
+              <textarea name="message"
+                        rows="5"
+                        class="form-control"
+                        required></textarea>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="text-start">
+              <button type="submit" class="btn btn-primary px-4">
+                Send Message
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

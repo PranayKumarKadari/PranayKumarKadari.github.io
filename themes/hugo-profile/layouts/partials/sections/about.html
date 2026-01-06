@@ -1,0 +1,25 @@
+{{ if .Site.Params.about.enable | default false }}
+<section id="about" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+    <div class="row">
+      <!-- FULL WIDTH COLUMN (matches hero span) -->
+      <div class="col-12 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+
+        <h3 class="text-center mb-4">{{ .Site.Params.about.title }}</h3>
+
+        {{ .Site.Params.about.content | markdownify }}
+
+        {{ if .Site.Params.about.skills.enable }}
+          <h5 class="mt-4">{{ .Site.Params.about.skills.title }}</h5>
+          <ul>
+            {{ range .Site.Params.about.skills.items }}
+              <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,37 @@
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="card h-100 bg-dark text-light rounded-4 shadow">
+
+    {{ if .image }}
+    <img src="{{ .image }}" class="card-img-top rounded-top-4" alt="{{ .title }}">
+    {{ end }}
+
+    <div class="card-body p-4">
+      <h5 class="card-title">{{ .title }}</h5>
+      <p class="card-text text-secondary">{{ .content }}</p>
+
+      {{ if .description }}
+      <button class="btn btn-outline-light btn-sm mt-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-{{ urlize .title }}">
+        More Info
+      </button>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ if .description }}
+<div class="modal fade" id="modal-{{ urlize .title }}" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content bg-dark text-light rounded-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">{{ .title }}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        {{ .description | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

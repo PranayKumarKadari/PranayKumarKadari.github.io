@@ -1,0 +1,61 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    <h3 class="text-center mb-5">
+      {{ .Site.Params.experience.title | default "Experience" }}
+    </h3>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        {{ range .Site.Params.experience.items }}
+        {{ $exp := . }}
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            {{ range $exp.jobs }}
+            <div class="row g-4 align-items-start">
+
+              <!-- LEFT: COMPANY LOGO -->
+              {{ if $exp.companyLogo }}
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="{{ $exp.companyLogo }}"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              {{ end }}
+
+              <!-- RIGHT: TEXT -->
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">{{ $exp.company }}</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">{{ .name }}</div>
+                  <span class="text-white">{{ .date }}</span>
+                </div>
+
+
+                <div class="experience-content">
+                  {{ .content | markdownify }}
+                </div>
+
+              </div>
+
+            </div>
+            {{ end }}
+
+          </div>
+        </div>
+
+        {{ end }}
+
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

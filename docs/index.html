@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.153.0"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=./fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="./css/font.css" media="all">
+<link rel="stylesheet" href="./css/custom.css" media="all">
+
+
+
+<meta property="og:url" content="https://pranaykumarkadari.github.io/pranay-site/">
+  <meta property="og:site_name" content="Pranay Kumar Kadari">
+  <meta property="og:title" content="Pranay Kumar Kadari">
+  <meta property="og:description" content="Personal Portfolio">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pranay Kumar Kadari">
+  <meta name="twitter:description" content="Personal Portfolio">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="./css/header.css" media="all">
+<link rel="stylesheet" href="./css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="./css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content=Personal&#32;Portfolio>
+<link rel="stylesheet" href="./css/index.css" media="all">
+<link rel="stylesheet" href="./css/projects.css" media="all">
+
+
+<script defer src="./fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Pranay Kumar Kadari
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="./">
+                
+                Pranay Kumar Kadari
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#publications"
+                             aria-label="publications">
+                             Publications
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="./#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    
+                </span>
+                <h1>
+                    Pranay Kumar Kadari.
+                </h1>
+                <h2>
+                    M.S in Plant, Insect &amp; Microbial Sciences
+                </h2>
+                <p class="hero-content">
+                    I am a Research Technician at the <a href="http://www.soybiotechcenter.org/">National Center for Soybean Biotechnology</a>, University of Missouri-Columbia. My work integrates field experimentation, high  throughput plant phenotyping, laboratory analysis, and advanced data analytics to understand how how abiotic stress such as drought, heat and waterlogging influences root system architecture. This research aims to select the best germplasm or varieties resilient to crop stress and improve nutrient acquisition, supporting sustainable agriculture under changing environmental conditions.
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="./cv/Kadari_CV.pdf" class="btn" download
+			  >
+                            Download CV
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com"
+             target="_blank" 
+            class="btn social-icon"
+        >
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://linkedin.com"
+             target="_blank" 
+            class="btn social-icon"
+        >
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span>
+</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="./images/pranay1.jpg"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero-bottom-svg d-md-block d-lg-block d-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="201" height="201" viewBox="0 0 201 201">
+            <g id="Group_1168" data-name="Group 1168" transform="translate(-384 -1392)">
+                <rect id="Rectangle_2206" data-name="Rectangle 2206" width="12" height="2" rx="1"
+                    transform="translate(391 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2271" data-name="Rectangle 2271" width="12" height="2" rx="1"
+                    transform="translate(391 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2238" data-name="Rectangle 2238" width="12" height="2" rx="1"
+                    transform="translate(391 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2278" data-name="Rectangle 2278" width="12" height="2" rx="1"
+                    transform="translate(391 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2222" data-name="Rectangle 2222" width="12" height="2" rx="1"
+                    transform="translate(391 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2272" data-name="Rectangle 2272" width="12" height="2" rx="1"
+                    transform="translate(391 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2241" data-name="Rectangle 2241" width="12" height="2" rx="1"
+                    transform="translate(391 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2288" data-name="Rectangle 2288" width="12" height="2" rx="1"
+                    transform="translate(391 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2214" data-name="Rectangle 2214" width="12" height="2" rx="1"
+                    transform="translate(499 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2289" data-name="Rectangle 2289" width="12" height="2" rx="1"
+                    transform="translate(499 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2256" data-name="Rectangle 2256" width="12" height="2" rx="1"
+                    transform="translate(499 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2290" data-name="Rectangle 2290" width="12" height="2" rx="1"
+                    transform="translate(499 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2231" data-name="Rectangle 2231" width="12" height="2" rx="1"
+                    transform="translate(499 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2291" data-name="Rectangle 2291" width="12" height="2" rx="1"
+                    transform="translate(499 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2257" data-name="Rectangle 2257" width="12" height="2" rx="1"
+                    transform="translate(499 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2292" data-name="Rectangle 2292" width="12" height="2" rx="1"
+                    transform="translate(499 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2210" data-name="Rectangle 2210" width="12" height="2" rx="1"
+                    transform="translate(445 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2279" data-name="Rectangle 2279" width="12" height="2" rx="1"
+                    transform="translate(445 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2248" data-name="Rectangle 2248" width="12" height="2" rx="1"
+                    transform="translate(445 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2280" data-name="Rectangle 2280" width="12" height="2" rx="1"
+                    transform="translate(445 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2226" data-name="Rectangle 2226" width="12" height="2" rx="1"
+                    transform="translate(445 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2281" data-name="Rectangle 2281" width="12" height="2" rx="1"
+                    transform="translate(445 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2249" data-name="Rectangle 2249" width="12" height="2" rx="1"
+                    transform="translate(445 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2293" data-name="Rectangle 2293" width="12" height="2" rx="1"
+                    transform="translate(445 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2219" data-name="Rectangle 2219" width="12" height="2" rx="1"
+                    transform="translate(553 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2310" data-name="Rectangle 2310" width="12" height="2" rx="1"
+                    transform="translate(553 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2262" data-name="Rectangle 2262" width="12" height="2" rx="1"
+                    transform="translate(553 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2311" data-name="Rectangle 2311" width="12" height="2" rx="1"
+                    transform="translate(553 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2232" data-name="Rectangle 2232" width="12" height="2" rx="1"
+                    transform="translate(553 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2312" data-name="Rectangle 2312" width="12" height="2" rx="1"
+                    transform="translate(553 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2263" data-name="Rectangle 2263" width="12" height="2" rx="1"
+                    transform="translate(553 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2313" data-name="Rectangle 2313" width="12" height="2" rx="1"
+                    transform="translate(553 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2209" data-name="Rectangle 2209" width="12" height="2" rx="1"
+                    transform="translate(418 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2273" data-name="Rectangle 2273" width="12" height="2" rx="1"
+                    transform="translate(418 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2242" data-name="Rectangle 2242" width="12" height="2" rx="1"
+                    transform="translate(418 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2282" data-name="Rectangle 2282" width="12" height="2" rx="1"
+                    transform="translate(418 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2223" data-name="Rectangle 2223" width="12" height="2" rx="1"
+                    transform="translate(418 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2274" data-name="Rectangle 2274" width="12" height="2" rx="1"
+                    transform="translate(418 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2243" data-name="Rectangle 2243" width="12" height="2" rx="1"
+                    transform="translate(418 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2294" data-name="Rectangle 2294" width="12" height="2" rx="1"
+                    transform="translate(418 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2217" data-name="Rectangle 2217" width="12" height="2" rx="1"
+                    transform="translate(526 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2314" data-name="Rectangle 2314" width="12" height="2" rx="1"
+                    transform="translate(526 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2258" data-name="Rectangle 2258" width="12" height="2" rx="1"
+                    transform="translate(526 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2315" data-name="Rectangle 2315" width="12" height="2" rx="1"
+                    transform="translate(526 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2233" data-name="Rectangle 2233" width="12" height="2" rx="1"
+                    transform="translate(526 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2316" data-name="Rectangle 2316" width="12" height="2" rx="1"
+                    transform="translate(526 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2259" data-name="Rectangle 2259" width="12" height="2" rx="1"
+                    transform="translate(526 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2317" data-name="Rectangle 2317" width="12" height="2" rx="1"
+                    transform="translate(526 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2211" data-name="Rectangle 2211" width="12" height="2" rx="1"
+                    transform="translate(472 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2295" data-name="Rectangle 2295" width="12" height="2" rx="1"
+                    transform="translate(472 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2250" data-name="Rectangle 2250" width="12" height="2" rx="1"
+                    transform="translate(472 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2296" data-name="Rectangle 2296" width="12" height="2" rx="1"
+                    transform="translate(472 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2227" data-name="Rectangle 2227" width="12" height="2" rx="1"
+                    transform="translate(472 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2297" data-name="Rectangle 2297" width="12" height="2" rx="1"
+                    transform="translate(472 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2251" data-name="Rectangle 2251" width="12" height="2" rx="1"
+                    transform="translate(472 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2298" data-name="Rectangle 2298" width="12" height="2" rx="1"
+                    transform="translate(472 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2221" data-name="Rectangle 2221" width="12" height="2" rx="1"
+                    transform="translate(580 1392) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2318" data-name="Rectangle 2318" width="12" height="2" rx="1"
+                    transform="translate(580 1500) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2264" data-name="Rectangle 2264" width="12" height="2" rx="1"
+                    transform="translate(580 1446) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2319" data-name="Rectangle 2319" width="12" height="2" rx="1"
+                    transform="translate(580 1554) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2236" data-name="Rectangle 2236" width="12" height="2" rx="1"
+                    transform="translate(580 1419) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2320" data-name="Rectangle 2320" width="12" height="2" rx="1"
+                    transform="translate(580 1527) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2265" data-name="Rectangle 2265" width="12" height="2" rx="1"
+                    transform="translate(580 1473) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2321" data-name="Rectangle 2321" width="12" height="2" rx="1"
+                    transform="translate(580 1581) rotate(90)" fill="#282f49" />
+                <rect id="Rectangle_2207" data-name="Rectangle 2207" width="12" height="2" rx="1"
+                    transform="translate(396 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2270" data-name="Rectangle 2270" width="12" height="2" rx="1"
+                    transform="translate(396 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2239" data-name="Rectangle 2239" width="12" height="2" rx="1"
+                    transform="translate(396 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2283" data-name="Rectangle 2283" width="12" height="2" rx="1"
+                    transform="translate(396 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2224" data-name="Rectangle 2224" width="12" height="2" rx="1"
+                    transform="translate(396 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2275" data-name="Rectangle 2275" width="12" height="2" rx="1"
+                    transform="translate(396 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2244" data-name="Rectangle 2244" width="12" height="2" rx="1"
+                    transform="translate(396 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2299" data-name="Rectangle 2299" width="12" height="2" rx="1"
+                    transform="translate(396 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2215" data-name="Rectangle 2215" width="12" height="2" rx="1"
+                    transform="translate(504 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2300" data-name="Rectangle 2300" width="12" height="2" rx="1"
+                    transform="translate(504 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2252" data-name="Rectangle 2252" width="12" height="2" rx="1"
+                    transform="translate(504 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2301" data-name="Rectangle 2301" width="12" height="2" rx="1"
+                    transform="translate(504 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2228" data-name="Rectangle 2228" width="12" height="2" rx="1"
+                    transform="translate(504 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2302" data-name="Rectangle 2302" width="12" height="2" rx="1"
+                    transform="translate(504 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2253" data-name="Rectangle 2253" width="12" height="2" rx="1"
+                    transform="translate(504 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2303" data-name="Rectangle 2303" width="12" height="2" rx="1"
+                    transform="translate(504 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2212" data-name="Rectangle 2212" width="12" height="2" rx="1"
+                    transform="translate(450 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2284" data-name="Rectangle 2284" width="12" height="2" rx="1"
+                    transform="translate(450 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2245" data-name="Rectangle 2245" width="12" height="2" rx="1"
+                    transform="translate(450 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2285" data-name="Rectangle 2285" width="12" height="2" rx="1"
+                    transform="translate(450 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2229" data-name="Rectangle 2229" width="12" height="2" rx="1"
+                    transform="translate(450 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2286" data-name="Rectangle 2286" width="12" height="2" rx="1"
+                    transform="translate(450 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2246" data-name="Rectangle 2246" width="12" height="2" rx="1"
+                    transform="translate(450 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2304" data-name="Rectangle 2304" width="12" height="2" rx="1"
+                    transform="translate(450 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2218" data-name="Rectangle 2218" width="12" height="2" rx="1"
+                    transform="translate(558 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2322" data-name="Rectangle 2322" width="12" height="2" rx="1"
+                    transform="translate(558 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2266" data-name="Rectangle 2266" width="12" height="2" rx="1"
+                    transform="translate(558 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2323" data-name="Rectangle 2323" width="12" height="2" rx="1"
+                    transform="translate(558 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2234" data-name="Rectangle 2234" width="12" height="2" rx="1"
+                    transform="translate(558 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2324" data-name="Rectangle 2324" width="12" height="2" rx="1"
+                    transform="translate(558 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2267" data-name="Rectangle 2267" width="12" height="2" rx="1"
+                    transform="translate(558 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2325" data-name="Rectangle 2325" width="12" height="2" rx="1"
+                    transform="translate(558 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2208" data-name="Rectangle 2208" width="12" height="2" rx="1"
+                    transform="translate(423 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2276" data-name="Rectangle 2276" width="12" height="2" rx="1"
+                    transform="translate(423 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2240" data-name="Rectangle 2240" width="12" height="2" rx="1"
+                    transform="translate(423 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2287" data-name="Rectangle 2287" width="12" height="2" rx="1"
+                    transform="translate(423 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2225" data-name="Rectangle 2225" width="12" height="2" rx="1"
+                    transform="translate(423 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2277" data-name="Rectangle 2277" width="12" height="2" rx="1"
+                    transform="translate(423 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2247" data-name="Rectangle 2247" width="12" height="2" rx="1"
+                    transform="translate(423 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2305" data-name="Rectangle 2305" width="12" height="2" rx="1"
+                    transform="translate(423 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2216" data-name="Rectangle 2216" width="12" height="2" rx="1"
+                    transform="translate(531 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2326" data-name="Rectangle 2326" width="12" height="2" rx="1"
+                    transform="translate(531 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2260" data-name="Rectangle 2260" width="12" height="2" rx="1"
+                    transform="translate(531 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2327" data-name="Rectangle 2327" width="12" height="2" rx="1"
+                    transform="translate(531 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2235" data-name="Rectangle 2235" width="12" height="2" rx="1"
+                    transform="translate(531 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2328" data-name="Rectangle 2328" width="12" height="2" rx="1"
+                    transform="translate(531 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2261" data-name="Rectangle 2261" width="12" height="2" rx="1"
+                    transform="translate(531 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2329" data-name="Rectangle 2329" width="12" height="2" rx="1"
+                    transform="translate(531 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2213" data-name="Rectangle 2213" width="12" height="2" rx="1"
+                    transform="translate(477 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2306" data-name="Rectangle 2306" width="12" height="2" rx="1"
+                    transform="translate(477 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2254" data-name="Rectangle 2254" width="12" height="2" rx="1"
+                    transform="translate(477 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2307" data-name="Rectangle 2307" width="12" height="2" rx="1"
+                    transform="translate(477 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2230" data-name="Rectangle 2230" width="12" height="2" rx="1"
+                    transform="translate(477 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2308" data-name="Rectangle 2308" width="12" height="2" rx="1"
+                    transform="translate(477 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2255" data-name="Rectangle 2255" width="12" height="2" rx="1"
+                    transform="translate(477 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2309" data-name="Rectangle 2309" width="12" height="2" rx="1"
+                    transform="translate(477 1588) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2220" data-name="Rectangle 2220" width="12" height="2" rx="1"
+                    transform="translate(585 1399) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2330" data-name="Rectangle 2330" width="12" height="2" rx="1"
+                    transform="translate(585 1507) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2268" data-name="Rectangle 2268" width="12" height="2" rx="1"
+                    transform="translate(585 1453) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2331" data-name="Rectangle 2331" width="12" height="2" rx="1"
+                    transform="translate(585 1561) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2237" data-name="Rectangle 2237" width="12" height="2" rx="1"
+                    transform="translate(585 1426) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2332" data-name="Rectangle 2332" width="12" height="2" rx="1"
+                    transform="translate(585 1534) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2269" data-name="Rectangle 2269" width="12" height="2" rx="1"
+                    transform="translate(585 1480) rotate(-180)" fill="#282f49" />
+                <rect id="Rectangle_2333" data-name="Rectangle 2333" width="12" height="2" rx="1"
+                    transform="translate(585 1588) rotate(-180)" fill="#282f49" />
+            </g>
+        </svg>
+    </div>
+    
+</section>
+
+<section id="about" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+    <div class="row">
+      
+      <div class="col-12 content animate" id="primary-font">
+
+        <h3 class="text-center mb-4">About Me</h3>
+
+        <p>Hi,</p>
+<p>I am Pranay, a research Technician at <a href="http://www.soybiotechcenter.org/">National Center for Soybean Biotechnology</a> at the University of Missouri.</p>
+<p>I was born and raised on a small farm in Telangana, in southern India. Helping out on the farm from a young age naturally made me curious not just about what we do in agriculture, but why we do it that way and how those choices shape crop performance and profitability. Motivated by this interest, I pursued my diploma and bachelor’s at Professor Jayashankar Telangana State Agricultural University (Formerly Acharya NG Ranga Agricultural University) with emphasis on soil science and agronomy. Later, I joined the University of Missouri at Columbia, as a Graduate Research Assistant under <a href="https://cafnr.missouri.edu/directory/gurbir-singh/">Dr. Gurbir Singh</a> and completed my M.S. in Plant, Insect, and Microbial Sciences and a Graduate Certificate in Geographic Information Systems. My thesis research focused on developing GIS-based nutrient management zones for nitrogen management and evaluating how nitrogen rate and timing strategies, nitrification inhibitors, and soil conservation strategies influence soil health, nitrogen uptake, losses through leaching and gaseous pathways, crop productivity, and profitability.</p>
+<p>Currently, as a Research Technician in <a href="https://cafnrfaculty.missouri.edu/nguyenlab/">Dr. Henry Nguyen’s lab</a>, I study root system architecture and plasticity under abiotic (waterlogging, drought, heat, and low soil fertility) and biotic stresses (nematodes) using high-throughput root phenotyping technologies, with an emphasis on identifying root traits associated with stress tolerance and improved resource-use efficiency.</p>
+<p>I am interested in understanding how environmental stressors and crop management practices alter plant functional traits and influence nutrient cycling, soil health and crop productivity. My long-term goal is to develop systems-based approaches that improve nutrient uptake efficiency, reduce nutrient losses, and enhance crop productivity and profitability by translating mechanistic insights into actionable management strategies for farmers.</p>
+
+
+        
+          <h5 class="mt-4">Research Interest</h5>
+          <ul>
+            
+              <li>Plant Nutrition</li>
+            
+              <li>Soil Health</li>
+            
+              <li>Hight throughput phenotyping</li>
+            
+              <li>Remote sensing and Spatial analysis</li>
+            
+              <li>Machine Learning</li>
+            
+              <li>Crop economics</li>
+            
+          </ul>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="education" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    
+    <h3 class= "text-center mb-5">Education</h3>
+
+    <div class="row justify-content-center">
+
+      
+      
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        <div class="card">
+          <div class="card-body p-4 p-md-5">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/UM.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Institution logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <h5 class="mb-0">MS in Plant, Insect and Microbial Sciences</h5>
+                  <small>2023 – 2025</small>
+                </div>
+
+                
+                
+                  <a href="https://missouri.edu/" target="_blank" class="text-white text-decoration-none">
+                     <h6 class="mb-3">University of Missouri, columbia</h6>
+                  </a>
+                
+
+
+                
+                
+
+                
+                <div class="education-content">
+                  <p>Thesis title: Topographic Positions Affects Corn Yields and Productivity under Varied Nitrogen Rates
+and Application Timings.</p>
+<p>Thesis committee: <a href="https://cafnr.missouri.edu/directory/gurbir-singh/">Dr. Gurbir Singh</a>, <a href="https://cafnr.missouri.edu/directory/kelly-nelson/">Dr. Kelly A. Nelson</a>, <a href="https://cafnr.missouri.edu/directory/morgan-davis/">Dr. Morgan Davis</a>, <a href="https://cafnr.missouri.edu/directory/gurpreet-kaur/">Dr. Gurpreet Kaur</a></p>
+
+                </div>
+
+                
+                
+
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        <div class="card">
+          <div class="card-body p-4 p-md-5">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/UM.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Institution logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <h5 class="mb-0">Graduate Certificate in Geographic Information Systems (GIS)</h5>
+                  <small>2023 – 2025</small>
+                </div>
+
+                
+                
+                  <a href="https://www.missouri.edu" target="_blank" class="text-white text-decoration-none">
+                     <h6 class="mb-3">University of Missouri, Columbia</h6>
+                  </a>
+                
+
+
+                
+                
+
+                
+                <div class="education-content">
+                  Spatial analysis, geospatial modeling, remote sensing, and GIS-based decision support for agricultural systems.
+                </div>
+
+                
+                
+
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        <div class="card">
+          <div class="card-body p-4 p-md-5">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/PJTAU.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Institution logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <h5 class="mb-0">BSc (Hons) in Agricultural Sciences</h5>
+                  <small>2018 – 2022</small>
+                </div>
+
+                
+                
+                  <a href="www.pjtsau.edu.in" target="_blank" class="text-white text-decoration-none">
+                     <h6 class="mb-3">Professor Jayashankar Telangana State Agricultural University</h6>
+                  </a>
+                
+
+
+                
+                
+
+                
+                <div class="education-content">
+                  Focus on agronomy and soil science.
+                </div>
+
+                
+                
+
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+<section id="experience" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    <h3 class="text-center mb-5">
+      Experience
+    </h3>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        
+        
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/UM.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">National Center for Soybean Biotechnology, University of Missouri</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">Research Technician</div>
+                  <span class="text-white">2025 – Present</span>
+                </div>
+
+
+                <div class="experience-content">
+                  <ul>
+<li>Led end-to-end data acquisition, image processing, statistical analysis, and reporting for high-throughput root system architecture (RSA) studies evaluating soybean and sorghum responses to abiotic stress.</li>
+<li>Assisted research scientists and postdoctoral fellows with equipment maintenance, logistics planning, data analysis, and manuscript preparation.</li>
+<li>Developed and optimized protocols and analytical pipelines to improve efficiency and reproducibility of data workflows.</li>
+</ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+        </div>
+
+        
+        
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/UM.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">University of Missouri, Columbia, MO, USA</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">Graduate Research Assistant</div>
+                  <span class="text-white">2023 – 2025</span>
+                </div>
+
+
+                <div class="experience-content">
+                  <ul>
+<li>Conducted field and laboratory research on nitrogen management in corn–soybean systems across different topographic positions.</li>
+<li>Worked on projects evaluating nitrification inhibitors, nitrogen use efficiency, and nitrogen losses via soil, plant, water, and gaseous pathways.</li>
+<li>Authored peer-reviewed publications and presented extension and research findings at national and international conferences.</li>
+</ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+        </div>
+
+        
+        
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/ICRISAT.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">International Crops Research Institute for the Semi-Arid Tropics (ICRISAT), India</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">Research Intern – R.S. Paroda Gene Bank</div>
+                  <span class="text-white">2022 – 2023</span>
+                </div>
+
+
+                <div class="experience-content">
+                  <ul>
+<li>Conducted phenotypic and trait-specific characterization of global legume germplasm collections, including pigeon pea, chickpea, and groundnut.</li>
+<li>Evaluated a core set of 3,140 sesame germplasm accessions to support genetic resource conservation and utilization.</li>
+</ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+        </div>
+
+        
+        
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/PJTAU.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">Agricultural Research Station (ARS), Medak, Telangana, India</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">Research Assistant, Department of Genetics &amp; Plant Breeding</div>
+                  <span class="text-white">2022</span>
+                </div>
+
+
+                <div class="experience-content">
+                  <ul>
+<li>Contributed to the germplasm slelection and hybridization of novel green manure genotypes for improved biomass.</li>
+<li>Recorded biometrical observations and conducted soil sample analysis of experimental field plots.</li>
+<li>Assisted in developing packages of practice for seed production in sunhemp and sesbania.</li>
+</ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+        </div>
+
+        
+        
+
+        <div class="experience-card mb-5 px-4 py-4">
+
+          <div class="card-body p-0">
+
+            
+            <div class="row g-4 align-items-start">
+
+              
+              
+              <div class="col-12 col-sm-3 col-md-2 text-center">
+                <img src="./images/logos/PJTAU.png"
+                     class="img-fluid rounded"
+                     style="max-height:70px"
+                     alt="Company logo">
+              </div>
+              
+
+              
+              <div class="col-12 col-sm-9 col-md-10">
+
+                <h5 class="mb-1">Agricultural Research Station, Mudhole, Nirmal, India</h5>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="fw-semibold">Student Intern</div>
+                  <span class="text-white">2021 – 2022</span>
+                </div>
+
+
+                <div class="experience-content">
+                  <ul>
+<li>Supported technology transfer and extension activities through participatory rural appraisal (PRA), farmer meetings, field visits, and awareness campaigns.</li>
+<li>Documented indigenous technical knowledge (ITKs), success stories, and challenges in local farming systems.</li>
+</ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="projects" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    <h3 class="text-center mb-5">
+      Projects
+    </h3>
+
+    
+    <div class="d-flex justify-content-center mb-4 gap-3">
+      <button class="btn btn-outline-light active"
+              id="tab-current"
+              onclick="switchTab('current')">
+        Current Projects
+      </button>
+
+      <button class="btn btn-outline-light"
+              id="tab-past"
+              onclick="switchTab('past')">
+        Past Projects
+      </button>
+    </div>
+
+    
+    <div id="current-projects" class="row g-4 justify-content-center">
+      
+
+      
+        
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+
+            
+            <img src="./images/projects-section/project1.jpg"
+                 class="card-img-top"
+                 alt="Phenotyping crown root architecture for enhanced nutrient capture and stress resilience.">
+            
+
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Phenotyping crown root architecture for enhanced nutrient capture and stress resilience.</h5>
+              <p class="card-text"></p>
+
+              
+              <button class="btn btn-outline-light btn-sm mt-auto"
+                      onclick="openModal('phenotyping-crown-root-architecture-for-enhanced-nutrient-capture-and-stress-resilience.')">
+                More Info
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div id="modal-phenotyping-crown-root-architecture-for-enhanced-nutrient-capture-and-stress-resilience." class="custom-modal">
+          <div class="custom-modal-content">
+            <span class="close-btn"
+                  onclick="closeModal('phenotyping-crown-root-architecture-for-enhanced-nutrient-capture-and-stress-resilience.')">&times;</span>
+
+            <h4 class="mb-3">Phenotyping crown root architecture for enhanced nutrient capture and stress resilience.</h4>
+
+            <ul>
+              
+                <li>The overarching goal of this collaborative research (between Donald Danforth Plant Science Center and the University of Missouri) is to improve climate resilience in soybean by identifying root architectural traits and plastic responses that enhance nutrient acquisition under drought stress conditions.</li>
+              
+                <li>The specific objectives of this project are to (i) characterize genotypic variation in soybean root system architecture, (ii) quantify root trait plasticity in response to water stress, and (iii) identify root traits associated with improved nutrient uptake and stress resilience under drought-prone environments.</li>
+              
+                <li>map[To achieve these objectives, the project integrates high-throughput root phenotyping approaches, including:1. Shovelomics for field-based excavation and characterization of root architectural traits. 2. Root imaging using industrial monochrome cameras and the RhizoVision Imager platform. 3. Root trait extraction and analysis using RhizoVision Explorer and RhizoWin software for quantitative root phenomics.]</li>
+              
+            </ul>
+          </div>
+        </div>
+        
+
+      
+        
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+
+            
+            <img src="./images/projects-section/project.png"
+                 class="card-img-top"
+                 alt="Yield loss predictions under different waterlogging durations.">
+            
+
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Yield loss predictions under different waterlogging durations.</h5>
+              <p class="card-text"></p>
+
+              
+              <button class="btn btn-outline-light btn-sm mt-auto"
+                      onclick="openModal('yield-loss-predictions-under-different-waterlogging-durations.')">
+                More Info
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div id="modal-yield-loss-predictions-under-different-waterlogging-durations." class="custom-modal">
+          <div class="custom-modal-content">
+            <span class="close-btn"
+                  onclick="closeModal('yield-loss-predictions-under-different-waterlogging-durations.')">&times;</span>
+
+            <h4 class="mb-3">Yield loss predictions under different waterlogging durations.</h4>
+
+            <ul>
+              
+                <li>The objective of this study is to quantify the impact of varying waterlogging durations on grain yield and key aboveground agronomic traits across selected crop germplasm. Specifically, this project aims to (i) evaluate yield sensitivity to short- and prolonged waterlogging stress, (ii) characterize genotypic variation in agronomic responses to excess soil moisture, and (iii) develop predictive models to estimate yield loss and associated production risk under waterlogging conditions.</li>
+              
+                <li>Methodology includes a split-split plot field design to impose waterlogging treatments across germplasm, collection of grain yield and key aboveground agronomic traits, multispectral UAV imaging during peak stress and recovery, and machine learning–based prediction of yield loss and production risk.</li>
+              
+            </ul>
+          </div>
+        </div>
+        
+
+      
+        
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+
+            
+            <img src="./images/projects-section/project3.jpg"
+                 class="card-img-top"
+                 alt="Characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform.">
+            
+
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform.</h5>
+              <p class="card-text"></p>
+
+              
+              <button class="btn btn-outline-light btn-sm mt-auto"
+                      onclick="openModal('characterization-of-root-system-architecture-and-plasticity-under-waterlogging-stress-using-high-throughput-rhizoslide-imaging-platform.')">
+                More Info
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div id="modal-characterization-of-root-system-architecture-and-plasticity-under-waterlogging-stress-using-high-throughput-rhizoslide-imaging-platform." class="custom-modal">
+          <div class="custom-modal-content">
+            <span class="close-btn"
+                  onclick="closeModal('characterization-of-root-system-architecture-and-plasticity-under-waterlogging-stress-using-high-throughput-rhizoslide-imaging-platform.')">&times;</span>
+
+            <h4 class="mb-3">Characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform.</h4>
+
+            <ul>
+              
+                <li>A high-throughput root phenotyping platform was developed to quantitatively characterize root system architecture (RSA) and to identify architectural and developmental traits associated with tolerance to waterlogging stress during the reproductive growth stage in soybean. A diverse panel of soybean germplasm was evaluated using a semi-automated rhizoslide-based phenotyping system, allowing non-destructive, multi- stage imaging of root growth and development. Root image segmentation, trait extraction, and quantitative analysis were conducted using RootPainter and RhizoWin software to derive standardized morphological and architectural root traits.</li>
+              
+            </ul>
+          </div>
+        </div>
+        
+
+      
+    </div>
+
+    
+    
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-light"
+              onclick="showAllCurrent()">
+        View More
+      </button>
+    </div>
+    
+
+    
+    <div id="past-projects"
+         class="row g-4 justify-content-center d-none mt-4">
+
+      
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+
+          
+          <img src="./images/projects/old.png"
+               class="card-img-top"
+               alt="Old Project">
+          
+
+          <div class="card-body">
+            <h5 class="card-title">Old Project</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+.custom-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 9999;
+}
+
+.custom-modal-content {
+  background: #1f2428;
+  color: #fff;
+  max-width: 850px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 8vh auto;
+  padding: 30px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  cursor: pointer;
+}
+</style>
+
+
+<script>
+function openModal(id) {
+  document.getElementById('modal-' + id).style.display = 'block';
+}
+
+function closeModal(id) {
+  document.getElementById('modal-' + id).style.display = 'none';
+}
+
+function switchTab(tab) {
+  document.getElementById('current-projects')
+    .classList.toggle('d-none', tab !== 'current');
+  document.getElementById('past-projects')
+    .classList.toggle('d-none', tab !== 'past');
+
+  document.getElementById('tab-current')
+    .classList.toggle('active', tab === 'current');
+  document.getElementById('tab-past')
+    .classList.toggle('active', tab === 'past');
+}
+
+function showAllCurrent() {
+  document.querySelectorAll('#current-projects .col-12')
+    .forEach(el => el.style.display = 'block');
+}
+</script>
+
+
+
+<section id="publications" class="py-5">
+  <div class="container">
+
+    <h3 class="text-center mb-5">
+      Publications
+    </h3>
+
+    
+    <div class="row g-4">
+
+      
+      
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card h-100 bg-dark text-light border-0 shadow">
+
+          
+          <img
+            src="./images/publications/nitrapyrin_page1.jpg"
+            class="card-img-top"
+            alt="Publication first page"
+          >
+          
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title mt-2">
+              Nitrapyrin application at different topographic positions affects corn productivity and economic returns
+            </h5>
+
+            <p class="text-muted mb-3">
+              Agronomy Journal (2025)
+            </p>
+
+            
+            <a
+              href="https://acsess.onlinelibrary.wiley.com/doi/pdf/10.1002/agj2.70239"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-auto"
+            >
+              View publication (PDF / DOI)
+            </a>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card h-100 bg-dark text-light border-0 shadow">
+
+          
+          <img
+            src="./images/publications/grassland_som_page1.png"
+            class="card-img-top"
+            alt="Publication first page"
+          >
+          
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title mt-2">
+               Cover Crops Affects Cotton Yield, Quality, and Economic Outcomes. Agrosystems, Geosciences &amp; Environment
+            </h5>
+
+            <p class="text-muted mb-3">
+              Agroecosystems Geosciences and Environment (2025)
+            </p>
+
+            
+            <a
+              href="https://www.nature.com/articles/YYYYYYY"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-auto"
+            >
+              View publication (PDF / DOI)
+            </a>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card h-100 bg-dark text-light border-0 shadow">
+
+          
+          <img
+            src="./images/publications/.jpg"
+            class="card-img-top"
+            alt="Publication first page"
+          >
+          
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title mt-2">
+              Nitrification Inhibitors Affect Nitrogen Requirement, Corn Grain Yields and Quality, and use Efficiencies Across Topographic Positions 
+            </h5>
+
+            <p class="text-muted mb-3">
+              Agronomy Journal (2025)
+            </p>
+
+            
+            <a
+              href="xxxxxxxxxxxxxxxxxxxxxxxxxx"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-auto"
+            >
+              View publication (PDF / DOI)
+            </a>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card h-100 bg-dark text-light border-0 shadow">
+
+          
+          <img
+            src="./images/publications/.jpg"
+            class="card-img-top"
+            alt="Publication first page"
+          >
+          
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title mt-2">
+              Nitrogen Dynamics in Soil Plant Water and Gaseous Pathways as Affected by Topographic Positions and Application Timing  
+            </h5>
+
+            <p class="text-muted mb-3">
+              Agriculture and Environment, Ecosystems (2025)
+            </p>
+
+            
+            <a
+              href="xxxxxxxxxxxxxxxxxxxxxxxxxx"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-auto"
+            >
+              View publication (PDF / DOI)
+            </a>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+      
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card h-100 bg-dark text-light border-0 shadow">
+
+          
+          <img
+            src="./images/publications/.jpg"
+            class="card-img-top"
+            alt="Publication first page"
+          >
+          
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title mt-2">
+              Nitrogen Dynamics in Soil Plant Water and Gaseous Pathways as Affected by Topographic Positions and Application Timing  
+            </h5>
+
+            <p class="text-muted mb-3">
+              Agronomy Journal (2025)
+            </p>
+
+            
+            <a
+              href="xxxxxxxxxxxxxxxxxxxxxxxxxx"
+              target="_blank"
+              class="btn btn-outline-light btn-sm mt-auto"
+            >
+              View publication (PDF / DOI)
+            </a>
+            
+
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5">
+  <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+
+    
+    <h3 class="text-center mb-5">Contact</h3>
+
+    <div class="row justify-content-center">
+      
+      <div class="col-12 col-md-11 col-lg-12 mb-5">
+
+        <div class="card p-4 p-md-5"
+             style="
+               border-radius: 28px;
+               border: 1px solid rgba(255,255,255,0.55);
+               background-color: rgba(255,255,255,0.06);
+             ">
+
+          <form action="https://formspree.io/f/xvzgbjzn" method="POST">
+
+            
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Name</label>
+              <input type="text"
+                     name="name"
+                     class="form-control"
+                     required>
+            </div>
+
+            
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Email</label>
+              <input type="email"
+                     name="email"
+                     class="form-control"
+                     required>
+            </div>
+
+            
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Message</label>
+              <textarea name="message"
+                        rows="5"
+                        class="form-control"
+                        required></textarea>
+            </div>
+
+            
+            <div class="text-start">
+              <button type="submit" class="btn btn-primary px-4">
+                Send Message
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com" target="_blank" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/pranay-kumar-42a843212/" target="_blank" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://pranaykumarkadari.github.io/pranay-site/" title="Pranay Kumar Kadari">
+                        <img alt="Footer logo" src="./fav.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2026  All Rights Reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

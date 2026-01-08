@@ -1,4 +1,6 @@
-baseURL: "/"
+baseURL: "https://pranaykumarkadari.github.io/pranay-site/"
+relativeURLs: true
+canonifyURLs: true
 
 languageCode: "en-us"
 title: "Pranay Kumar Kadari"
@@ -53,8 +55,10 @@ params:
     title: "Pranay Kumar Kadari."
     subtitle: "M.S in Plant, Insect & Microbial Sciences"
     content: |
-      I am a Research Technician at the [National Center for Soybean Biotechnology](http://www.soybiotechcenter.org/), University of Missouri-Columbia. My work integrates field experimentation, high throughput phenotyping, laboratory analysis, and advanced data analytics to understand how crop management and plant functional traits mediate soil-plant interactions that influence nutrient cycling, agroecosystem resilience, crop productivity and profitability. 
-    image: /images/pranay1.jpg
+      I am a Research Technician at the [National Center for Soybean Biotechnology](http://www.soybiotechcenter.org/), University of Missouri-Columbia. My work integrates field experimentation, high  throughput plant phenotyping, laboratory analysis, and advanced data analytics to understand how how abiotic stress such as drought, heat and waterlogging influences root system architecture. This research aims to select the best germplasm or varieties resilient to crop stress and improve nutrient acquisition, supporting sustainable agriculture under changing environmental conditions.
+    image: "/images/pranay1.jpg"
+
+    roundImage: false
 
     bottomImage:
       enable: true
@@ -90,13 +94,12 @@ params:
       enable: true
       title: "Research Interest"
       items:
-        - Nitrogen Cycling
-        - Soil Health
-        - Crop economics
-        - Root phenotyping
+        - Plant Nutrition
+        - Soil Health 
+        - Hight throughput phenotyping 
         - Remote sensing and Spatial analysis
         - Machine Learning
-        - Nutrient management
+        - Crop economics
 
   education:
     enable: true
@@ -111,8 +114,7 @@ params:
           Thesis title: Topographic Positions Affects Corn Yields and Productivity under Varied Nitrogen Rates 
           and Application Timings.
 
-          Thesis committee:  
-          [Dr. Gurbir Singh](https://cafnr.missouri.edu/directory/gurbir-singh/), [Dr. Kelly A. Nelson](https://cafnr.missouri.edu/directory/kelly-nelson/), [Dr. Morgan Davis](https://cafnr.missouri.edu/directory/morgan-davis/), [Dr. Gurpreet Kaur](https://cafnr.missouri.edu/directory/gurpreet-kaur/) 
+          Thesis committee: [Dr. Gurbir Singh](https://cafnr.missouri.edu/directory/gurbir-singh/), [Dr. Kelly A. Nelson](https://cafnr.missouri.edu/directory/kelly-nelson/), [Dr. Morgan Davis](https://cafnr.missouri.edu/directory/morgan-davis/), [Dr. Gurpreet Kaur](https://cafnr.missouri.edu/directory/gurpreet-kaur/) 
 
       - title: "Graduate Certificate in Geographic Information Systems (GIS)"
         school:
@@ -121,7 +123,7 @@ params:
         date: "2023 – 2025"
         logo: "/images/logos/UM.png"
         content: |
-          Coursework in spatial analysis, geospatial modeling, remote sensing, and GIS-based decision support for agricultural systems.
+          Spatial analysis, geospatial modeling, remote sensing, and GIS-based decision support for agricultural systems.
       - title: "BSc (Hons) in Agricultural Sciences"
         school:
           name: "Professor Jayashankar Telangana State Agricultural University"
@@ -129,8 +131,7 @@ params:
         date: "2018 – 2022"
         logo: "/images/logos/PJTAU.png"
         content: |
-          Focus on agronomy, soil science, and crop production systems.
-
+          Focus on agronomy and soil science.
   experience:
     enable: true
     items:
@@ -142,7 +143,7 @@ params:
           - name: "Research Technician"
             date: "2025 – Present"
             content: |
-               - Led end-to-end data acquisition, image processing, statistical analysis, and reporting for high-throughput root system architecture (RSA) studies evaluating soybean responses to abiotic stress.  
+               - Led end-to-end data acquisition, image processing, statistical analysis, and reporting for high-throughput root system architecture (RSA) studies evaluating soybean and sorghum responses to abiotic stress.  
                - Assisted research scientists and postdoctoral fellows with equipment maintenance, logistics planning, data analysis, and manuscript preparation.  
                - Developed and optimized protocols and analytical pipelines to improve efficiency and reproducibility of data workflows.
 
@@ -153,9 +154,9 @@ params:
           - name: "Graduate Research Assistant"
             date: "2023 – 2025"
             content: |
-               - Conducted field and laboratory research on nitrogen management in corn–soybean systems across contrasting topographic positions.  
+               - Conducted field and laboratory research on nitrogen management in corn–soybean systems across different topographic positions.  
                - Worked on projects evaluating nitrification inhibitors, nitrogen use efficiency, and nitrogen losses via soil, plant, water, and gaseous pathways.  
-               - Prepared peer-reviewed manuscripts and delivered extension talks and conference presentations (ASA–CSSA–SSSA).
+               - Authored peer-reviewed publications and presented extension and research findings at national and international conferences.
 
       - company: "International Crops Research Institute for the Semi-Arid Tropics (ICRISAT), India"
         companyUrl: "https://www.icrisat.org"
@@ -173,7 +174,7 @@ params:
           - name: "Research Assistant, Department of Genetics & Plant Breeding"
             date: "2022"
             content: |
-               - Contributed to the development of novel green manure genotypes for sustainable agriculture.  
+               - Contributed to the germplasm slelection and hybridization of novel green manure genotypes for improved biomass.  
                - Recorded biometrical observations and conducted soil sample analysis of experimental field plots.  
                - Assisted in developing packages of practice for seed production in sunhemp and sesbania.
 
@@ -191,7 +192,7 @@ params:
     title: "Projects"
 
     items:
-      - title: "Climate adaptive soybean: root architecture and plasticity tuning for nutrient capture and stress resilience."
+      - title: "Phenotyping crown root architecture for enhanced nutrient capture and stress resilience."
         
         image: "/images/projects-section/project1.jpg"
         link: "https://example.com"
@@ -214,7 +215,7 @@ params:
           - Methodology includes a split-split plot field design to impose waterlogging treatments across germplasm, collection of grain yield and key aboveground agronomic traits, multispectral UAV imaging during peak stress and recovery, and machine learning–based prediction of yield loss and production risk.
              
 
-      - title: "characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform."
+      - title: "Characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform."
         
         image: "/images/projects-section/project3.jpg"
         link: "https://example.com"
@@ -266,7 +267,7 @@ params:
         image: "/images/publications/.jpg"
        
       - title: "Nitrogen Dynamics in Soil Plant Water and Gaseous Pathways as Affected by Topographic Positions and Application Timing  "
-        journal: "Agronomy Journal"
+        journal: "Agriculture and Environment, Ecosystems"
         year: 2025
         link: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
         image: "/images/publications/.jpg"
@@ -289,4 +290,5 @@ params:
     socialNetworks:
       github: https://github.com
       linkedin: https://www.linkedin.com/in/pranay-kumar-42a843212/
+
 

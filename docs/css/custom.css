@@ -326,3 +326,11 @@ body {
   transform: scale(var(--img-zoom, 1));
   transition: transform 0.3s ease;
 }
+.hero-bottom-svg,
+.hero-bg,
+.hero .plus,
+.hero .cross,
+.hero-decor,
+.hero-decoration {
+  display: none !important;
+}

@@ -1,7 +1,4 @@
 baseURL: "https://pranaykumarkadari.github.io/pranay-site/"
-relativeURLs: true
-canonifyURLs: true
-
 languageCode: "en-us"
 title: "Pranay Kumar Kadari"
 theme: hugo-profile
@@ -56,7 +53,8 @@ params:
     subtitle: "M.S in Plant, Insect & Microbial Sciences"
     content: |
       I am a Research Technician at the [National Center for Soybean Biotechnology](http://www.soybiotechcenter.org/), University of Missouri-Columbia. My work integrates field experimentation, high  throughput plant phenotyping, laboratory analysis, and advanced data analytics to understand how how abiotic stress such as drought, heat and waterlogging influences root system architecture. This research aims to select the best germplasm or varieties resilient to crop stress and improve nutrient acquisition, supporting sustainable agriculture under changing environmental conditions.
-    image: "/images/pranay1.jpg"
+    image: "images/pranay1.jpg"
+
 
     roundImage: false
 

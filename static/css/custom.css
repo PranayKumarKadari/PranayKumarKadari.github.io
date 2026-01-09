@@ -585,68 +585,37 @@ a:hover {
   padding-bottom: 20px !important;
 }
 
+/* ================================
+   HERO DOWNLOAD CV BUTTON – BOX
+   ================================ */
 
+#hero a.btn,
+#hero .hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
+  padding: 10px 22px;
+  margin-top: 14px;
 
-/* =========================================
-   FORCE HERO SOCIAL ICONS VISIBILITY
-   ========================================= */
+  font-size: 0.95rem;
+  font-weight: 500;
 
-#hero .social-links,
-#hero .social-icons,
-#hero .social-links a,
-#hero .social-links i {
-  display: inline-flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+
+  transition: all 0.25s ease;
 }
 
-/* Icon size + color */
-#hero .social-links i {
-  font-size: 1.4rem !important;
+/* Hover effect */
+#hero a.btn:hover,
+#hero .hero-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
   color: #ffffff !important;
 }
 
-/* Spacing */
-#hero .social-links a {
-  margin-right: 14px;
-}
-/* Prevent hero overrides from killing icons */
-#hero * {
-  pointer-events: auto;
-}
-.hero-bottom-svg,
-.hero-bg {
-  display: none !important;
-}
-
-
-/* =========================================
-   FORCE HERO SOCIAL ICONS (FINAL FIX)
-   ========================================= */
-
-#hero .social-links {
-  display: flex !important;
-  align-items: center !important;
-  gap: 16px !important;
-  margin-top: 16px !important;
-}
-
-#hero .social-links a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 36px !important;
-  height: 36px !important;
-}
-
-#hero .social-links i {
-  font-size: 1.6rem !important;
-  color: #ffffff !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.hero-bottom-svg,
-.hero-bg {
-  display: none !important;
-}

@@ -504,3 +504,13 @@ a:hover {
 #education .card {
   padding: 2.5rem !important;
 }
+/* =========================================
+   REDUCE EDUCATION CARD HEIGHT
+   ========================================= */
+
+#education .card,
+.education-card,
+.education-item {
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+}

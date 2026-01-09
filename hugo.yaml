@@ -1,6 +1,6 @@
 baseURL: "https://pranaykumarkadari.github.io/pranay-site/"
-relativeURLs: false
-canonifyURLs: false
+relativeURLs: true
+canonifyURLs: true
 
 languageCode: "en-us"
 title: "Pranay Kumar Kadari"
@@ -9,6 +9,7 @@ enableRobotsTXT: true
 
 pagination:
   pagerSize: 3
+
 
 markup:
   goldmark:
@@ -66,7 +67,7 @@ params:
     button:
       enable: true
       name: "Download CV"
-      url: "/cv/Kadari_CV.pdf"
+      url: "/cv/Kadari_CV_2026.pdf"
       download: true
       newPage: false
     socialLinks:

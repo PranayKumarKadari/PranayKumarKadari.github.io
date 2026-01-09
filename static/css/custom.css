@@ -478,144 +478,16 @@ a:hover {
   opacity: 0.8;
 }
 
-/* =================================================
-   MAKE EDUCATION CARDS MATCH EXPERIENCE CARDS
-   ================================================= */
 
-/* Target education cards */
-.education-card,
-.education-item,
+/* Remove outer border from education cards */
 #education .card {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.025)
-  ) !important;
-
-  box-shadow:
-    0 0 0 1.1px rgba(255, 255, 255, 0.55),
-    0 12px 30px rgba(0, 0, 0, 0.45) !important;
-
-  border-radius: 32px !important;
-  backdrop-filter: blur(6px);
+  border: none !important;
+  box-shadow: none !important;
 }
-
-/* Ensure spacing matches experience */
-#education .card {
-  padding: 2.5rem !important;
+/* Inner education content card styling */
+#education .education-content {
+  background: rgba(30, 35, 40, 0.95);
+  border: 1.1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 22px;
+  padding: 1.6rem 2rem;
 }
-/* =========================================
-   REDUCE EDUCATION CARD HEIGHT
-   ========================================= */
-
-#education .card,
-.education-card,
-.education-item {
-  padding-top: 1.6rem !important;
-  padding-bottom: 1.6rem !important;
-}
-/* =========================================
-   EDUCATION CARD — MATCH EXPERIENCE EXACTLY
-   ========================================= */
-
-#education .card {
-  /* same glass background */
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.025)
-  ) !important;
-
-  /* same border thickness */
-  border: 1.1px solid rgba(255, 255, 255, 0.55) !important;
-
-  /* same rounded corners */
-  border-radius: 26px !important;
-
-  /* same shadow */
-  box-shadow:
-    0 0 0 1.1px rgba(255, 255, 255, 0.55),
-    0 12px 30px rgba(0, 0, 0, 0.45) !important;
-
-  /* same blur */
-  backdrop-filter: blur(6px) !important;
-
-  /* reduced height (keep this) */
-  padding-top: 1.6rem !important;
-  padding-bottom: 1.6rem !important;
-}
-
-
-
-
-/* =========================================
-   MAKE EDUCATION CARDS MATCH EXPERIENCE CARDS
-   ========================================= */
-
-/* Try the most common education card wrappers */
-#education .card,
-#education .education-card,
-#education .timeline-card,
-#education .section-card {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.025)
-  ) !important;
-
-  box-shadow:
-    0 0 0 1.1px rgba(255, 255, 255, 0.55),
-    0 12px 30px rgba(0, 0, 0, 0.45) !important;
-
-  border-radius: 32px !important;
-  backdrop-filter: blur(6px) !important;
-}
-#education .card,
-#education .education-card,
-#education .timeline-card,
-#education .section-card {
-  border: none !important; /* remove theme border */
-  outline: none !important;
-}
-#education .card,
-#education .education-card,
-#education .timeline-card,
-#education .section-card {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-}
-
-/* ================================
-   HERO DOWNLOAD CV BUTTON – BOX
-   ================================ */
-
-#hero a.btn,
-#hero .hero-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 22px;
-  margin-top: 14px;
-
-  font-size: 0.95rem;
-  font-weight: 500;
-
-  color: #ffffff !important;
-  text-decoration: none !important;
-
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 12px;
-
-  transition: all 0.25s ease;
-}
-
-/* Hover effect */
-#hero a.btn:hover,
-#hero .hero-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: #ffffff;
-  color: #ffffff !important;
-}
-

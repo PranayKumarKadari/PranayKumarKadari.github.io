@@ -335,28 +335,5 @@ body {
   display: none !important;
 }
 
-/* FORCE DARK MODE EVERYWHERE */
-html,
-body,
-section,
-.card,
-.navbar,
-.education,
-.experience,
-.projects,
-.publications {
-  background-color: #0d1117 !important;
-  color: #c9d1d9 !important;
-}
 
-/* Fix white cards (Education / Experience) */
-.card {
-  background-color: #161b22 !important;
-  border-color: #30363d !important;
-}
-
-/* Fix headings */
-h1, h2, h3, h4, h5 {
-  color: #e6edf3 !important;
-}
 

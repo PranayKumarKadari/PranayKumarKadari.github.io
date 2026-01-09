@@ -619,3 +619,34 @@ a:hover {
 .hero-bg {
   display: none !important;
 }
+
+
+/* =========================================
+   FORCE HERO SOCIAL ICONS (FINAL FIX)
+   ========================================= */
+
+#hero .social-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-top: 16px !important;
+}
+
+#hero .social-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+#hero .social-links i {
+  font-size: 1.6rem !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.hero-bottom-svg,
+.hero-bg {
+  display: none !important;
+}

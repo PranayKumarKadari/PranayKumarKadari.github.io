@@ -460,24 +460,34 @@ a:hover {
   color: #ffffff !important;
 }
 /* =========================================
-   FIX HERO SOCIAL ICON VISIBILITY
+   FORCE HERO SOCIAL ICON VISIBILITY (FINAL)
    ========================================= */
 
-/* Social icon container */
-#hero .social-links a,
-#hero .social-icons a {
-  color: #ffffff !important;       /* icon color */
-}
-
-/* FontAwesome icons themselves */
-#hero .social-links i,
-#hero .social-icons i {
+/* Target hero social buttons */
+#hero .btn-social,
+#hero .btn-social i,
+#hero .btn-social svg {
   color: #ffffff !important;
-  font-size: 1.2rem;
+  fill: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-/* Optional: hover glow */
-#hero .social-links a:hover i,
-#hero .social-icons a:hover i {
-  color: #dbeafe !important;
+/* Fix pseudo-elements used by hugo-profile */
+#hero .btn-social::before,
+#hero .btn-social::after {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
+
+/* Remove any accidental background masking */
+#hero .btn-social {
+  background-color: transparent !important;
+  border: 1px solid #ffffff55 !important;
+}
+
+/* Hover effect */
+#hero .btn-social:hover {
+  background-color: #ffffff15 !important;
+}
+

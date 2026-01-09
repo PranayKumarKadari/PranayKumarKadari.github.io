@@ -585,3 +585,37 @@ a:hover {
   padding-bottom: 20px !important;
 }
 
+
+
+
+/* =========================================
+   FORCE HERO SOCIAL ICONS VISIBILITY
+   ========================================= */
+
+#hero .social-links,
+#hero .social-icons,
+#hero .social-links a,
+#hero .social-links i {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Icon size + color */
+#hero .social-links i {
+  font-size: 1.4rem !important;
+  color: #ffffff !important;
+}
+
+/* Spacing */
+#hero .social-links a {
+  margin-right: 14px;
+}
+/* Prevent hero overrides from killing icons */
+#hero * {
+  pointer-events: auto;
+}
+.hero-bottom-svg,
+.hero-bg {
+  display: none !important;
+}

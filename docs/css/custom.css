@@ -438,3 +438,24 @@ a:hover {
 .navbar a {
   color: inherit !important;
 }
+
+/* =========================================
+   CONTACT FORM – REMOVE BLUE BUTTON
+   ========================================= */
+
+#contact .btn,
+#contact button,
+#contact .btn-primary {
+  background-color: #1f2428 !important;   /* dark background */
+  border-color: #ffffff33 !important;
+  color: #ffffff !important;
+}
+
+/* Hover effect */
+#contact .btn:hover,
+#contact button:hover,
+#contact .btn-primary:hover {
+  background-color: #2a2f34 !important;
+  border-color: #ffffff66 !important;
+  color: #ffffff !important;
+}

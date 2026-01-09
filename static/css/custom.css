@@ -514,3 +514,33 @@ a:hover {
   padding-top: 1.6rem !important;
   padding-bottom: 1.6rem !important;
 }
+/* =========================================
+   EDUCATION CARD — MATCH EXPERIENCE EXACTLY
+   ========================================= */
+
+#education .card {
+  /* same glass background */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+
+  /* same border thickness */
+  border: 1.1px solid rgba(255, 255, 255, 0.55) !important;
+
+  /* same rounded corners */
+  border-radius: 32px !important;
+
+  /* same shadow */
+  box-shadow:
+    0 0 0 1.1px rgba(255, 255, 255, 0.55),
+    0 12px 30px rgba(0, 0, 0, 0.45) !important;
+
+  /* same blur */
+  backdrop-filter: blur(6px) !important;
+
+  /* reduced height (keep this) */
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+}

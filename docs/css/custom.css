@@ -459,3 +459,25 @@ a:hover {
   border-color: #ffffff66 !important;
   color: #ffffff !important;
 }
+/* =========================================
+   FIX HERO SOCIAL ICON VISIBILITY
+   ========================================= */
+
+/* Social icon container */
+#hero .social-links a,
+#hero .social-icons a {
+  color: #ffffff !important;       /* icon color */
+}
+
+/* FontAwesome icons themselves */
+#hero .social-links i,
+#hero .social-icons i {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+}
+
+/* Optional: hover glow */
+#hero .social-links a:hover i,
+#hero .social-icons a:hover i {
+  color: #dbeafe !important;
+}

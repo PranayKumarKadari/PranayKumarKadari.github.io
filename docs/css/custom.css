@@ -391,11 +391,39 @@ textarea,
 }
 
 
-/* =========================================
-   REMOVE BLUE COLOR FROM TEXT LINKS
-   ========================================= */
+/* =========================================================
+   KILL ALL BLUE TEXT (BOOTSTRAP + HUGO-PROFILE)
+   ========================================================= */
 
-/* Hero, About, Education, Experience, Projects, Publications */
+/* Override Bootstrap primary color */
+:root {
+  --bs-primary: #e6edf3 !important;
+  --bs-link-color: #e6edf3 !important;
+  --bs-link-hover-color: #ffffff !important;
+}
+
+/* Force all content links to white */
+a,
+a:visited,
+a:active {
+  color: #e6edf3 !important;
+}
+
+/* Hover */
+a:hover {
+  color: #ffffff !important;
+}
+
+/* Kill Bootstrap utility classes */
+.text-primary,
+.link-primary,
+.btn-link,
+.card a,
+.section a {
+  color: #e6edf3 !important;
+}
+
+/* Section-specific overrides */
 #hero a,
 #about a,
 #education a,
@@ -403,22 +431,10 @@ textarea,
 #projects a,
 #publications a,
 #contact a {
-  color: #e6edf3 !important;          /* same as normal text */
-  text-decoration: underline;         /* still shows it’s a link */
+  color: #e6edf3 !important;
 }
 
-/* Hover state (slightly brighter, not blue) */
-#hero a:hover,
-#about a:hover,
-#education a:hover,
-#experience a:hover,
-#projects a:hover,
-#publications a:hover,
-#contact a:hover {
-  color: #ffffff !important;
-}
-
-/* Do NOT affect navbar links */
+/* Navbar untouched */
 .navbar a {
   color: inherit !important;
 }

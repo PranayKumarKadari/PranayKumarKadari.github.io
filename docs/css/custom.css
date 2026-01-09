@@ -108,13 +108,23 @@
    STICKY NAVBAR – ALWAYS VISIBLE
    ================================================= */
 
-/* Make navbar stick to top */
-header,
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
+/* ===============================
+   FORCE DARK THEME (SAFE FIX)
+   =============================== */
+
+html[data-theme="dark"],
+body {
+  background-color: #0b0f14 !important;
+  color: #e6edf3 !important;
 }
+
+/* Ensure all sections stay dark */
+section,
+.section,
+.container-fluid {
+  background-color: transparent !important;
+}
+
 
 /* Prevent navbar hiding on scroll */
 .navbar {
@@ -125,15 +135,10 @@ header,
 }
 
 /* Prevent content from going under navbar */
-body {
-  padding-top: 70px;
-}
+
 
 /* Solid background while scrolling */
-.navbar,
-header {
-  background-color: var(--background-color) !important;
-}
+
 
 /* Mobile safe */
 @media (max-width: 768px) {

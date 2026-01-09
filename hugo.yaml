@@ -27,7 +27,7 @@ params:
   animate: true
 
   theme:
-    disableThemeToggle: false
+    disableThemeToggle: true
     defaultTheme: "dark"
 
   navbar:
@@ -110,7 +110,7 @@ params:
           name: "University of Missouri, columbia"
           url: "https://missouri.edu/"
         date: "2023 – 2025"
-        logo: "/images/logos/UM.png"
+        logo: "images/logos/UM.png"
         content: |
           Thesis title: Topographic Positions Affects Corn Yields and Productivity under Varied Nitrogen Rates 
           and Application Timings.
@@ -122,7 +122,7 @@ params:
           name: "University of Missouri, Columbia"
           url: "https://www.missouri.edu"
         date: "2023 – 2025"
-        logo: "/images/logos/UM.png"
+        logo: "images/logos/UM.png"
         content: |
           Spatial analysis, geospatial modeling, remote sensing, and GIS-based decision support for agricultural systems.
       - title: "BSc (Hons) in Agricultural Sciences"
@@ -130,7 +130,7 @@ params:
           name: "Professor Jayashankar Telangana State Agricultural University"
           url: "www.pjtsau.edu.in"
         date: "2018 – 2022"
-        logo: "/images/logos/PJTAU.png"
+        logo: "images/logos/PJTAU.png"
         content: |
           Focus on agronomy and soil science.
   experience:
@@ -139,7 +139,7 @@ params:
 
       - company: "National Center for Soybean Biotechnology, University of Missouri"
         companyUrl: "https://soybeanbiotech.missouri.edu"
-        companyLogo: "/images/logos/UM.png"
+        companyLogo: "images/logos/UM.png"
         jobs:
           - name: "Research Technician"
             date: "2025 – Present"
@@ -150,7 +150,7 @@ params:
 
       - company: "University of Missouri, Columbia, MO, USA"
         companyUrl: "https://www.missouri.edu"
-        companyLogo: "/images/logos/UM.png"
+        companyLogo: "images/logos/UM.png"
         jobs:
           - name: "Graduate Research Assistant"
             date: "2023 – 2025"
@@ -161,7 +161,7 @@ params:
 
       - company: "International Crops Research Institute for the Semi-Arid Tropics (ICRISAT), India"
         companyUrl: "https://www.icrisat.org"
-        companyLogo: "/images/logos/ICRISAT.png"
+        companyLogo: "images/logos/ICRISAT.png"
         jobs:
           - name: "Research Intern – R.S. Paroda Gene Bank"
             date: "2022 – 2023"
@@ -170,7 +170,7 @@ params:
                - Evaluated a core set of 3,140 sesame germplasm accessions to support genetic resource conservation and utilization.
 
       - company: "Agricultural Research Station (ARS), Medak, Telangana, India"
-        companyLogo: "/images/logos/PJTAU.png"
+        companyLogo: "images/logos/PJTAU.png"
         jobs:
           - name: "Research Assistant, Department of Genetics & Plant Breeding"
             date: "2022"
@@ -180,7 +180,7 @@ params:
                - Assisted in developing packages of practice for seed production in sunhemp and sesbania.
 
       - company: "Agricultural Research Station, Mudhole, Nirmal, India"
-        companyLogo: "/images/logos/PJTAU.png"
+        companyLogo: "images/logos/PJTAU.png"
         jobs:
           - name: "Student Intern"
             date: "2021 – 2022"
@@ -195,7 +195,7 @@ params:
     items:
       - title: "Phenotyping crown root architecture for enhanced nutrient capture and stress resilience."
         
-        image: "/images/projects-section/project1.jpg"
+        image: "images/projects-section/project1.jpg"
         link: "https://example.com"
         date: "Jan 9, 2023"
         type: "current"
@@ -205,7 +205,7 @@ params:
           - To achieve these objectives, the project integrates high-throughput root phenotyping approaches, including: 1. Shovelomics for field-based excavation and characterization of root architectural traits. 2. Root imaging using industrial monochrome cameras and the RhizoVision Imager platform. 3. Root trait extraction and analysis using RhizoVision Explorer and RhizoWin software for quantitative root phenomics.
           
       - title: "Yield loss predictions under different waterlogging durations."
-        image: "/images/projects-section/project.png"
+        image: "images/projects-section/project.png"
         
         link: "https://example.com"
         date: "Jan 9, 2023"
@@ -218,7 +218,7 @@ params:
 
       - title: "Characterization of root system architecture and plasticity under waterlogging stress using high throughput rhizoslide imaging platform."
         
-        image: "/images/projects-section/project3.jpg"
+        image: "images/projects-section/project3.jpg"
         link: "https://example.com"
         date: "Sep 16, 2022"
         type: "current"
@@ -229,7 +229,7 @@ params:
 
       - title: "A field based root phenotyping array for the genetic improvement of resilient suatainable soybean production."
         
-        image: "/images/projects/aglapse.png"
+        image: "images/projects/aglapse.png"
         link: "https://example.com"
         category: "WebApp"
         date: "Sep 16, 2022"
@@ -237,7 +237,7 @@ params:
 
       - title: "Old Project"
         
-        image: "/images/projects/old.png"
+        image: "images/projects/old.png"
         link: "https://example.com"
         category: "Research"
         date: "2021"
@@ -252,32 +252,32 @@ params:
         journal: "Agronomy Journal"
         year: 2025
         link: "https://acsess.onlinelibrary.wiley.com/doi/pdf/10.1002/agj2.70239"
-        image: "/images/publications/nitrapyrin_page1.jpg"
+        image: "images/publications/nitrapyrin_page1.jpg"
        
 
       - title: " Cover Crops Affects Cotton Yield, Quality, and Economic Outcomes. Agrosystems, Geosciences & Environment"
         journal: "Agroecosystems Geosciences and Environment"
         year: 2025
         link: "https://www.nature.com/articles/YYYYYYY"
-        image: "/images/publications/grassland_som_page1.png"
+        image: "images/publications/grassland_som_page1.png"
       
       - title: "Nitrification Inhibitors Affect Nitrogen Requirement, Corn Grain Yields and Quality, and use Efficiencies Across Topographic Positions "
         journal: "Agronomy Journal"
         year: 2025
         link: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
-        image: "/images/publications/.jpg"
+        image: "images/publications/.jpg"
        
       - title: "Nitrogen Dynamics in Soil Plant Water and Gaseous Pathways as Affected by Topographic Positions and Application Timing  "
         journal: "Agriculture and Environment, Ecosystems"
         year: 2025
         link: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
-        image: "/images/publications/.jpg"
+        image: "images/publications/.jpg"
 
       - title: "Nitrogen Dynamics in Soil Plant Water and Gaseous Pathways as Affected by Topographic Positions and Application Timing  "
         journal: "Agronomy Journal"
         year: 2025
         link: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
-        image: "/images/publications/.jpg"
+        image: "images/publications/.jpg"
 
   contact:
     enable: true

@@ -334,3 +334,21 @@ body {
 .hero-decoration {
   display: none !important;
 }
+/* FORCE DARK MODE */
+html,
+body {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+/* Force dark variables used by hugo-profile */
+:root {
+  --bs-body-bg: #0d1117 !important;
+  --bs-body-color: #c9d1d9 !important;
+}
+
+/* Disable light-theme override */
+[data-theme="light"] {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}

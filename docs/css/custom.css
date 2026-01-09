@@ -463,31 +463,125 @@ a:hover {
    FORCE HERO SOCIAL ICON VISIBILITY (FINAL)
    ========================================= */
 
-/* Target hero social buttons */
-#hero .btn-social,
-#hero .btn-social i,
-#hero .btn-social svg {
-  color: #ffffff !important;
-  fill: #ffffff !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
+/* ===============================
+   FIX HERO SOCIAL ICON VISIBILITY
+   =============================== */
 
-/* Fix pseudo-elements used by hugo-profile */
-#hero .btn-social::before,
-#hero .btn-social::after {
+#hero .social-links a,
+#hero .social-links i {
   color: #ffffff !important;
   opacity: 1 !important;
+  display: inline-block !important;
 }
 
-/* Remove any accidental background masking */
-#hero .btn-social {
-  background-color: transparent !important;
-  border: 1px solid #ffffff55 !important;
+#hero .social-links a:hover {
+  opacity: 0.8;
 }
 
-/* Hover effect */
-#hero .btn-social:hover {
-  background-color: #ffffff15 !important;
+/* =================================================
+   MAKE EDUCATION CARDS MATCH EXPERIENCE CARDS
+   ================================================= */
+
+/* Target education cards */
+.education-card,
+.education-item,
+#education .card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+
+  box-shadow:
+    0 0 0 1.1px rgba(255, 255, 255, 0.55),
+    0 12px 30px rgba(0, 0, 0, 0.45) !important;
+
+  border-radius: 32px !important;
+  backdrop-filter: blur(6px);
+}
+
+/* Ensure spacing matches experience */
+#education .card {
+  padding: 2.5rem !important;
+}
+/* =========================================
+   REDUCE EDUCATION CARD HEIGHT
+   ========================================= */
+
+#education .card,
+.education-card,
+.education-item {
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+}
+/* =========================================
+   EDUCATION CARD — MATCH EXPERIENCE EXACTLY
+   ========================================= */
+
+#education .card {
+  /* same glass background */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+
+  /* same border thickness */
+  border: 1.1px solid rgba(255, 255, 255, 0.55) !important;
+
+  /* same rounded corners */
+  border-radius: 26px !important;
+
+  /* same shadow */
+  box-shadow:
+    0 0 0 1.1px rgba(255, 255, 255, 0.55),
+    0 12px 30px rgba(0, 0, 0, 0.45) !important;
+
+  /* same blur */
+  backdrop-filter: blur(6px) !important;
+
+  /* reduced height (keep this) */
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+}
+
+
+
+
+/* =========================================
+   MAKE EDUCATION CARDS MATCH EXPERIENCE CARDS
+   ========================================= */
+
+/* Try the most common education card wrappers */
+#education .card,
+#education .education-card,
+#education .timeline-card,
+#education .section-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+
+  box-shadow:
+    0 0 0 1.1px rgba(255, 255, 255, 0.55),
+    0 12px 30px rgba(0, 0, 0, 0.45) !important;
+
+  border-radius: 32px !important;
+  backdrop-filter: blur(6px) !important;
+}
+#education .card,
+#education .education-card,
+#education .timeline-card,
+#education .section-card {
+  border: none !important; /* remove theme border */
+  outline: none !important;
+}
+#education .card,
+#education .education-card,
+#education .timeline-card,
+#education .section-card {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 

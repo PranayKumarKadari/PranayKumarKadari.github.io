@@ -22,7 +22,7 @@ params:
   description: "Personal Portfolio"
   favicon: "/fav.png"
 
-  useBootstrapCDN: true
+  useBootstrapCDN: false
   mathjax: false
   animate: true
 

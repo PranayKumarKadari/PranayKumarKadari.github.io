@@ -391,3 +391,34 @@ textarea,
 }
 
 
+/* =========================================
+   REMOVE BLUE COLOR FROM TEXT LINKS
+   ========================================= */
+
+/* Hero, About, Education, Experience, Projects, Publications */
+#hero a,
+#about a,
+#education a,
+#experience a,
+#projects a,
+#publications a,
+#contact a {
+  color: #e6edf3 !important;          /* same as normal text */
+  text-decoration: underline;         /* still shows it’s a link */
+}
+
+/* Hover state (slightly brighter, not blue) */
+#hero a:hover,
+#about a:hover,
+#education a:hover,
+#experience a:hover,
+#projects a:hover,
+#publications a:hover,
+#contact a:hover {
+  color: #ffffff !important;
+}
+
+/* Do NOT affect navbar links */
+.navbar a {
+  color: inherit !important;
+}

@@ -1,7 +1,7 @@
-baseURL: "https://PranayKumarKadari.github.io/"
-relativeURLs: true
+baseURL: "https://pranaykumarkadari.github.io/"
+relativeURLs: false
 canonifyURLs: true
-
+publishDir: "docs"
 languageCode: "en-us"
 title: "Pranay Kumar Kadari"
 theme: hugo-profile

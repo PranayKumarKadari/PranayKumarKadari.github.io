@@ -75,7 +75,8 @@ params:
         - icon: fab fa-github
           url: https://github.com
         - icon: fab fa-linkedin
-          url: https://linkedin.com
+          url: www.linkedin.com/in/pranay-kumar-42a843212
+          target: "_blank"
 
   about:
     enable: true

@@ -492,19 +492,12 @@ a:hover {
   padding: 1.6rem 2rem;
 }
 
-/* REMOVE inner bordered box inside Education section ONLY */
-#education .resume-content,
-#education .resume-content.card,
-#education .resume-content .card-body {
-  background: transparent !important;
+/* 🔥 Remove inner bordered box in Education section */
+#education .education-content {
   border: none !important;
   box-shadow: none !important;
+  background: transparent !important;
   border-radius: 0 !important;
-}
-#education div[class*="card"] {
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
 }
 
 

@@ -501,5 +501,10 @@ a:hover {
   box-shadow: none !important;
   border-radius: 0 !important;
 }
+#education div[class*="card"] {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
 
 

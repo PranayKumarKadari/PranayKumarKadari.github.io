@@ -194,6 +194,13 @@ params:
   projects:
     enable: true
     title: "Projects"
+    
+    itemsPerPage: 3
+
+    viewMore:
+     enable: true
+     text: "View More"
+     url: "/projects"
 
     items:
       - title: "Phenotyping crown root architecture for enhanced nutrient capture and stress resilience."

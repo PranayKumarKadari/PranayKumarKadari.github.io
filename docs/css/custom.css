@@ -491,3 +491,15 @@ a:hover {
   border-radius: 22px;
   padding: 1.6rem 2rem;
 }
+
+/* Remove inner border/card in Education section */
+#education .education-content,
+#education .education-item,
+#education .education-details,
+#education .card,
+#education .card-body {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
